@@ -45,17 +45,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/media\/bgtile1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10456,
-		"inputAbbreviatedPath": "\/media\/bgtile1.png",
-		"outputAbbreviatedPath": "\/media\/bgtile1.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/media\/expanded shape copy 3.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -63,6 +52,28 @@
 		"initialSize": 5805,
 		"inputAbbreviatedPath": "\/media\/expanded shape copy 3.png",
 		"outputAbbreviatedPath": "\/media\/expanded shape copy 3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/media\/get-budding-72798.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.00468e+06,
+		"inputAbbreviatedPath": "\/media\/get-budding-72798.jpg",
+		"outputAbbreviatedPath": "\/media\/get-budding-72798.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/media\/pattern.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2958,
+		"inputAbbreviatedPath": "\/media\/pattern.png",
+		"outputAbbreviatedPath": "\/media\/pattern.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -87,6 +98,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/_globals.scss",
 		"outputAbbreviatedPath": "\/css\/_globals.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/_home.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/_home.scss",
+		"outputAbbreviatedPath": "\/css\/_home.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+}
+
+.feature{
+  background-image: url('media/get-budding-72798.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.feature::after{
+  content:'';
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(0,0,0,0.8);
+  z-index:1;
+}
+
+.feature__overlay{
+  position:relative;
+  padding: 5em;
+  z-index:2;
+}
+.feature__headline{
+  color: white;
+}
+.feature__tagline{
+  padding:0.5em;
+  color: white;
+  background-color:$purple;
+  position:relative;
+}
+.feature__tagline::before,feature__tagline::after{
+  content:'';
+  border:1em solid $blue;
+  position:absolute;
+}
+.feature__tagline:before{
+  left:0;
+  border-top:0;
+  border-left:0;
+}
+.feature__tagline:after{
+  right:10px;
+  border-bottom:0;
+  border-right:0;
+  overflow: visible;
+}
+
+.feature__logo{
+  display:block;
+  margin:0 auto 0;
+}
+
+.feature__headline{}
+.feature__tagline{}
+
+.email{
+  background-image: url('media/pattern.png');
+}

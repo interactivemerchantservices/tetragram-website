@@ -4,9 +4,10 @@
   %link(rel="stylesheet" href="style.css" type="text/css")
 %body
   %section.feature
-    %img.feature__logo(src="media/tetragramglyph.png")
-    %h1 Tetragram
-    %p The secret ingredient for small dispenseries.
+    .feature__overlay
+      %img.feature__logo(src="media/tetragramglyph.png")
+      %h1.feature__headline Tetragram
+      %h3.feature__tagline The secret ingredient for small dispenseries.
   %section.email
     %h2 Sign up for Updates
     #mc_embed_signup
