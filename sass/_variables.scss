@@ -9,6 +9,9 @@ $green-t2: #9CCD81;
 $blue: #0088CA;
 $blue-t1: #48C6EB;
 $blue-t2: #A0DBED;
+$blue-s1: darken($blue, 20%);
+$blue-s2: darken($blue, 40%);
+
 
 $purple: #6559A0;
 $purple-t1: #9A8FC1;
@@ -17,3 +20,7 @@ $purple-t2: #BDB1D4;
 $grey: #02100a;
 
 $serif: 'Libre Baskerville', Baskerville, Georgia, serif;
+$sans: 'Open Sans', Myriad, Helvetica, Arial, sans-serif;
+
+$tablet: "screen and (min-width:40em)";
+$desktop: "screen and (min-width:80em)";

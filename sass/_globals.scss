@@ -1,29 +1,65 @@
 body{
   background-color: $grey;
 //  background-image: url('media/bgtile1.png');
-  font-family: $serif;
+  font-family: $sans;
 }
 
-h1{
-  font-size:3.998em;
+h1 {
+  font-size: 2.441em;
 }
 
-h2{
-  font-size:2.827em;
+h2 {
+  font-size: 1.953em;
 }
 
-h3{
-  font-size:1.999em;
+h3 {
+  font-size: 1.563em;
 }
 
-h4{
-  font-size:1.414em;
+h4 {
+  font-size: 1.25em;
+}
+p{
+  font-size: 1.2em;
+  line-height: 1.4;
 }
 
-h5{
-  font-size:0.707em;
+@media #{$tablet}{
+  h1{
+    font-size:3.998em;
+  }
+
+  h2{
+    font-size:2.827em;
+  }
+
+  h3{
+    font-size:1.999em;
+  }
+
+  h4{
+    font-size:1.414em;
+  }
+
+  h5{
+    font-size:0.707em;
+  }
+
+  h6{
+    font-size:0.5em;
+  }
 }
 
-h6{
-  font-size:0.5em;
+input{
+  display:block;
+  width: 100%;
+  padding:0.5em;
+  font-family: $sans;
+  outline: $blue-s1;
+  border: 1px solid $grey;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+img{
+  max-width: 100%;
 }
