@@ -102,6 +102,11 @@ img {
   box-sizing: border-box;
   color: white; }
 
+body {
+  animation: opacity-fade 1s ease-in-out, push-up 1s ease-in-out;
+  color: #004364;
+  position: relative; }
+
 .feature {
   background-image: url("media/get-budding-72798.jpg");
   background-size: cover;
@@ -122,7 +127,8 @@ img {
   background-image: -webkit-linear-gradient(#BDB1D4 0, #6559A0 100%);
   background-image: linear-gradient(#BDB1D4 0, #6559A0 100%);
   opacity: 0.7;
-  z-index: 1; }
+  z-index: 1;
+  animation: opacity-fade--campaign 2s ease-in-out; }
 
 .feature__overlay {
   position: relative;
@@ -270,3 +276,19 @@ footer {
 
 .social-icons a:hover {
   color: #539341; }
+
+@keyframes opacity-fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes opacity-fade--campaign {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.7; } }
+@keyframes push-up {
+  0% {
+    top: -10px; }
+  100% {
+    top: 0; } }
