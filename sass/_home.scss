@@ -9,6 +9,7 @@
   background-position: center center;
   overflow: hidden;
   position: relative;
+  padding-bottom: 2em;
 }
 
 .feature::after{
@@ -30,16 +31,29 @@
 }
 .feature__logo{
   width: 100%;
-  max-width: 20em;
+  max-width: 15rem;
   display:block;
   margin:0 auto 0;
-  padding: 2em;
+  padding: 2rem;
+  @media #{$tablet}{
+    &{
+      margin-left: 0;
+      margin-right: 2rem;
+    }
+  }
 }
 .feature__headline{
   color: white;
   text-align: center;
   margin-bottom: 1em;
   font-family: $serif;
+  @media #{$tablet}{&{
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }}
 }
 .feature__tagline{
   padding:0.5em;
@@ -47,32 +61,45 @@
   background-color:transparentize(white, .2);
   position:relative;
   text-align: center;
+  max-width: 45rem;
+  margin: 0 auto 3em;
 }
-.feature__tagline:before,.feature__tagline:after{
+/*.feature__tagline:before,.feature__tagline:after{
   content:'';
-  border:1em solid transparentize(white, .5);
+  border:1em solid transparentize(white, .2);
   position:absolute;
   top:0;
 }
 .feature__tagline:before{
   left:-2em;
+  top: -1px;
   border-top-color: transparent;
   border-left-color:transparent;
 }
 .feature__tagline:after{
   right:-2em;
+  top:.5px;
   border-bottom-color: transparent;
   border-right-color: transparent;
   overflow: visible;
+}*/
+.feature__about{
+  max-width: 50rem;
+  padding: 0 1em;
+  margin: 1em auto 0;
 }
-
 section.email{
   background-image: url('media/pattern.png');
   background-color: $blue-s1;
-  padding: 1em;
+  padding: 2em 1em;
   color: white;
 }
 
+section.email > *{
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 .email input{
   margin-top:0.5em;
   color: $grey;
@@ -82,7 +109,7 @@ section.email{
   display:block;
 }
 .email p{
-  margin: 1em auto 1em;
+  margin: 1.5em auto 1.5em;
 }
 
 .email__optional{
@@ -95,8 +122,17 @@ section.email{
   margin-left: 1em;
 }
 input.button{
+  position:relative;
   background-color: $blue;
   color: white;
+  margin-top:1em;
+  margin-bottom: 2em;
+  top: 5px;
+  transition: box-shadow 0.25s ease-out, top 0.25s ease-out;
+}
+input.button:hover{
+  box-shadow: 0px 5px 15px $grey;
+  top: 0;
 }
 footer{
   padding: 1em;
@@ -110,6 +146,7 @@ footer{
   text-align: center;
   text-decoration: none;
   margin: 0 0.5em;
+  transition: color 0.25s ease-in-out;
 }
 .social-icons a:first-child {
   margin-left:0;
