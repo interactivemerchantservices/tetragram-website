@@ -8,7 +8,7 @@ body{
   position: relative;
 }
 .feature{
-  background-image: url('media/get-budding-72798.jpg');
+  background-image: url('img/get-budding-72798.jpg');
   background-size: cover;
   background-position: center center;
   overflow: hidden;
@@ -24,7 +24,7 @@ body{
   bottom:0;
   left:0;
   right:0;
-  @include linear-gradient($purple-t2 0, $purple 100%);
+  linear-gradient: $purple-t2 0, $purple 100%;
   opacity:0.7;
   z-index:1;
   animation: opacity-fade--campaign 2s ease-in-out;
@@ -53,9 +53,9 @@ body{
   margin-bottom: 1em;
   font-family: $serif;
   @media #{$tablet}{&{
-    @include display(flex);
-    @include align-items(center);
-    @include justify-content(center);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 1em;
     margin-bottom: 0.5em;
   }}
@@ -94,7 +94,7 @@ body{
   margin: 1em auto 0;
 }
 section.email{
-  background-image: url('media/pattern.png');
+  background-image: url('img/pattern.png');
   background-color: $blue-s1;
   padding: 2em 1em;
   color: white;
