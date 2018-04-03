@@ -96,6 +96,27 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/phone-user.jpg": {
+		"ft": 16384,
+		"iS": 58200,
+		"oA": 0,
+		"oAP": "\/img\/phone-user.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/tetragram-logo.png": {
+		"ft": 32768,
+		"iS": 91849,
+		"oA": 0,
+		"oAP": "\/img\/tetragram-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/tetragramglyph.png": {
 		"ft": 32768,
 		"iS": 10098,
@@ -281,7 +302,7 @@
 "projectAttributes": {
 	"creationDate": 541279302,
 	"displayValue": "tetragram-website",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-trap"
 	},
 "projectSettings": {
