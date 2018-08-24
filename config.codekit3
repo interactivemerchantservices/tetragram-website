@@ -7,7 +7,7 @@
 		"uuidString": "2B9B8F4D-8273-443D-9239-24CF337C1CBF"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -78,6 +78,7 @@
 	"\/img\/get-budding-72798.jpg": {
 		"ft": 16384,
 		"iS": 2004682,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/get-budding-72798.jpg",
 		"oF": 0,
@@ -99,6 +100,7 @@
 	"\/img\/phone-user.jpg": {
 		"ft": 16384,
 		"iS": 58200,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/phone-user.jpg",
 		"oF": 0,
@@ -205,6 +207,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/user.jpg": {
+		"ft": 16384,
+		"iS": 58200,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/user.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -303,7 +316,8 @@
 	"creationDate": 541279302,
 	"displayValue": "tetragram-website",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-trap"
+	"iconImageName": "\/img\/touch\/apple-touch-icon.png",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2106,6 +2120,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {

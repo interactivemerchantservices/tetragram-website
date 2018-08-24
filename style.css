@@ -61,7 +61,7 @@ h3 {
   font-size: 1.563em; }
 
 h4 {
-  font-size: 1.25em; }
+  font-size: 1.25em;}
 
 p {
   font-size: 1.2em;
@@ -75,7 +75,7 @@ p {
   h3 {
     font-size: 1.999em; }
   h4 {
-    font-size: 1.414em; }
+    font-size: 1.414em;}
   h5 {
     font-size: 0.707em; }
   h6 {
@@ -164,21 +164,31 @@ header {
   border-right-color: transparent;
   overflow: visible;
 }*/
+
+.blacktxt {
+  color: black;
+  font-size: 1em
+}
 .feature__about {
   max-width: 50rem;
   padding: 0 1em;
   margin: 1em auto 0; }
 
 section.email {
-  background-image: url("img/pattern.png");
-  background-color: #004364;
+  background-color: #ffffff;
   padding: 2em 1em;
-  color: white; }
+  color: black; }
 
 section.email > * {
   max-width: 50rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  color: black }
+
+section.about {
+  text-align: center;
+  
+}
 
 .email input {
   margin-top: 0.5em;
@@ -186,7 +196,8 @@ section.email > * {
 
 .email label {
   margin-top: 1em;
-  display: block; }
+  display: block;
+  color: black}
 
 .email p {
   margin: 1.5em auto 1.5em; }
