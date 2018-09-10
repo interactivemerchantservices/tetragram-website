@@ -6,6 +6,16 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102656117-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102656117-1');
+</script>
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
@@ -40,7 +50,7 @@ body, html {
     <!-- small screen -->
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
+      <i class="fas fa-bars"></i>
     </a>
   </div>
 </div>
@@ -48,9 +58,9 @@ body, html {
 <!-- Sidebar small screens -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Homet</a>
-  <a href="#why" onclick="w3_close()" class="w3-bar-item w3-button">Why</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="#why" onclick="w3_close()" class="w3-bar-item w3-button">The Problem</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">The Solution</a>
   <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button">App Features</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
 </nav>
@@ -84,7 +94,7 @@ body, html {
 <div class="w3-card w3-white">
   <div class="w3-container">
   <h3 class="w3-opacity w3-xxlarge">Medical Use</h3>
-  <p>Patients utilizing medical cannabis often find themselves on a journey of self-diagnosis. Deciding which cannabis strain will work best in treating an ailment can be intimidating for even the most seasoned cannabis user. </br></br>Cannabis affects everyone differently and consequently even expert recommendations can be unreliable.</p>
+  <p>Patients utilizing medical cannabis ofte100%ind themselves on a journey of self-diagnosis. Deciding which cannabis strain will work best in treating an ailment can be intimidating for even the most seasoned cannabis user. </br></br>Cannabis affects everyone differently and consequently even expert recommendations can be unreliable.</p>
   <p class="w3-xlarge w3-text-green w3-xlarge">The average dispensary in mature markets sees between 100 - 350 customers a day.</p>
   <p>This makes it nearly impossible for a budtender to provide a consultative approach in helping a patient find a strain that will address their specific medical needs.</p>
   </div>
@@ -123,7 +133,7 @@ body, html {
   <div class="w3-third">
   <div class="w3-light-grey">
     <div class="w3-container">
-    <p>Tetragram is also communal. Users can list reviews and gather data on what strains are helpful for specific symptoms and/or they preferred.</br></br> A digital timeline of each individualized purchases and/or treatments can be utilized to help individuals draw conclusions of what works for them.  </br></br>By providing users with an easy, user friendly app that will record their personal experiences with cannabis, Tetragram removes the guess work. </br></br>The purpose of Tetragram is to help gather information on the attributes of strains and more effectively use that information to empower the cannabis community.
+    <p>Tetragram is also communal. Users can list reviews and gather data on what strains are helpful for specific symptoms and/or their preferences.</br></br> A digital timeline of each individualized purchases and/or treatments can be utilized to help individuals draw conclusions of what works for them.  </br></br>By providing users with an easy, user friendly app that will record their personal experiences with cannabis, Tetragram removes the guess work. </br></br>The purpose of Tetragram is to help gather information on the attributes of strains and more effectively use that information to empower the cannabis community.
 </p>
     </div>
     </div>
@@ -159,7 +169,7 @@ body, html {
     </div>
     <div class="w3-col s4">
       <i class="fas fa-shapes w3-text-blue w3-jumbo"></i>
-      <p>Select the form of the cannabis being consumed.</p>
+      <p>Select the cannabis form being consumed.</p>
     </div>
     <div class="w3-col s4">
       <i class="fas fa-greater-than w3-text-cyan w3-jumbo"></i>
@@ -236,6 +246,49 @@ body, html {
   <p class="w3-small">    &copy; 2017 Interactive Merchant Services. All rights reserved. </p>
   </div>
 </footer>
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
 
 </body>
 </html>
