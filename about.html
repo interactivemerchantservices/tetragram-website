@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<title>About Tetragram</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102656117-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102656117-1');
+</script>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/phone-user.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+</style>
+<body>
+
+<!-- Nav bar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><IMG SRC="img/tetragram-logo.png" ALT="Tetragram Logo" WIDTH=120 HEIGHT=40></a>
+    <!-- Right-sided navbar -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+      <a href="patients.html" class="w3-bar-item w3-button"><i class="fas fa-users"></i> Patients</a>
+      <a href="about.html" class="w3-bar-item w3-button"><i class="fas fa-store-alt"></i> Dispensaries</a>
+      <a href="features.html" class="w3-bar-item w3-button"><i class="fas fa-mobile-alt"></i> App Features</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="far fa-envelope-open"></i> Contact</a>
+    </div>
+    <!-- small screen -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar small screens -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+  <a href="patients.html" class="w3-bar-item w3-button"><i class="fas fa-users"></i> Patients</a>
+  <a href="about.html" class="w3-bar-item w3-button"><i class="fas fa-store-alt"></i> Dispensaries</a>
+  <a href="features.html" class="w3-bar-item w3-button"><i class="fas fa-mobile-alt"></i> App Features</a>
+  <a href="contact.html" class="w3-bar-item w3-button"><i class="far fa-envelope-open"></i> Contact</a>
+</nav>
+
+<!-- Header - The Problem -->
+<div class="w3-container w3-white w3-padding-64" id="about">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3 class="w3-border-teal w3-bottombar">Problems Facing Dispensary Owners.</h3>
+      <p>Dispensaries can only view a patient’s purchase history through
+        their point-of-sale systems (POS) at their dispensary and have no
+        insight into the impact the product had on the patient. </p>
+  <p>We live in a digital age where everything we do is easily accessible
+    via our cellphone and we expect instant gratification. Paperback
+    journals are cumbersome, easily lost and forgotten.</p>
+<p class="w3-xlarge w3-text-green w3-xlarge">The average dispensary in mature markets sees between 100-350 customers a day.</p>
+<p>Most dispensaries use text messages to market new products and
+sales events; however, studies show patients do not engage with
+marketing of this kind, especially if they are receiving multiple text
+messages from different dispensaries. Currently, there isn’t a formalized method to share and/or rate
+dispensaries and/or have insight into patient trends and/or shopping
+habits.</p>
+    </div>
+    <div class="w3-col m6">
+      <br>
+      <br>
+
+<h4 class="w3-xlarge w3-text-red">What the app can do:</h4>
+  <ol type="1">
+    <li>Take pictures of the products purchased.</li>
+    <li>Select from a list of ailments such as PTSD, epilepsy, and chronic pain.</li>
+    <li>Select the dispensary where the product was purchased.</li>
+    <li>Select the strain purchased.</li>
+    <li>Select the form of the cannabis being consumed (e.g. flower, concentrate, wax, or shatter).</li>
+    <li>Select the method in which the product was consumed (e.g. vape, pipe, topical, tincture).</li>
+    <IMG SRC="img/symptom.png" ALT="Screenshot of Tetragram app" WIDTH=150 HEIGHT=250 class="center">
+    </div>
+</div>
+</div>
+
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3 class="w3-border-teal w3-bottombar">The Solution? Tetragram. </h3>
+      <p>Tetragram provides budtenders with the ability to view a patient’s
+        previously logged sessions and have a clear understanding of what
+        strain, form, etc. worked best in addressing the patients aliment.
+        The more knowledgeable a budtender becomes in knowing what
+        works best for their customers, the more engaging the conversation
+        becomes between the patient and budtender - leading to a more loyal
+        customer. </p>
+      <p>Tetragram provides an on-demand, real time snapshot of a
+        patient’s usage and history to assist with better customer service and
+        recommendations by budtenders. Our app also eliminates the costs
+        associated with producing paperback journals. </p>
+      </div>
+        <div class="w3-col m6">
+          <br>
+          <br>
+      <p>Tetragram affords dispensaries the ability to send targeted push notifications to promote specific products based on a patient’s entries and app usage. A dispensaries marketing campaigns will appear once a
+        user logs into Tetragram, thus providing a more captive audience.</p>
+      <p>Tetragram provides patients with the ability to write dispensary
+       reviews via a text form and with our 5 Star rating system. Moreover,
+       patients will state where they purchased their cannabis. Knowing not
+       only what product a patient has bought, but what dispensary they
+       bought it from is invaluable. Tetragram provides data analytics and
+       insight into the cannabis communities’ purchase habits which in turn
+       allows you to more effectively market to them.</p>
+        </div>
+      </div>
+      </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#about" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href='https://www.facebook.com/ttragram'><i class="fab fa-facebook-square w3-hover-opacity"></i></a>
+    <a href='https://www.instagram.com/ttragram/'><i class="fab fa-instagram w3-hover-opacity"></i></a>
+    <a href='https://twitter.com/ttragram'><i class="fab fa-twitter-square w3-hover-opacity"></i></a>
+    <a href='https://www.linkedin.com/company/tetragram/'><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+    <br>
+  <p class="w3-small">    &copy; 2017 Interactive Merchant Services. All rights reserved. </p>
+  </div>
+</footer>
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

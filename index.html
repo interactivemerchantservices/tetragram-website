@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<title>Tetragram</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102656117-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102656117-1');
+</script>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/phone-user.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body>
+
+<!-- Nav bar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><IMG SRC="img/tetragram-logo.png" ALT="Tetragram Logo" WIDTH=120 HEIGHT=40></a>
+    <!-- Right-sided navbar -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+      <a href="patients.html" class="w3-bar-item w3-button"><i class="fas fa-users"></i> Patients</a>
+      <a href="about.html" class="w3-bar-item w3-button"><i class="fas fa-store-alt"></i> Dispensaries</a>
+      <a href="features.html" class="w3-bar-item w3-button"><i class="fas fa-mobile-alt"></i> App Features</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="far fa-envelope-open"></i> Contact</a>
+    </div>
+    <!-- small screen -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar small screens -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+  <a href="patients.html" class="w3-bar-item w3-button"><i class="fas fa-users"></i> Patients</a>
+  <a href="about.html" class="w3-bar-item w3-button"><i class="fas fa-store-alt"></i> Dispensaries</a>
+  <a href="features.html" class="w3-bar-item w3-button"><i class="fas fa-mobile-alt"></i> App Features</a>
+  <a href="contact.html" class="w3-bar-item w3-button"><i class="far fa-envelope-open"></i> Contact</a>
+</nav>
+
+<!-- Header  -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Empowered by Remedy.</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">For Medicinal and Recreational Users</span><br>
+    <span class="w3-large">To empower the cannabis community with the ability to keep a </br> digital journal that records their experiences with cannabis products.</span>
+    <p><a href="features.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more about our app's features.</a></p>
+  </div>
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <a href='https://www.facebook.com/ttragram'><i class="fab fa-facebook-square w3-hover-opacity"></i></a>
+    <a href='https://www.instagram.com/ttragram/'><i class="fab fa-instagram w3-hover-opacity"></i></a>
+    <a href='https://twitter.com/ttragram'><i class="fab fa-twitter-square w3-hover-opacity"></i></a>
+    <a href='https://www.linkedin.com/company/tetragram/'><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</header>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href='https://www.facebook.com/ttragram'><i class="fab fa-facebook-square w3-hover-opacity"></i></a>
+    <a href='https://www.instagram.com/ttragram/'><i class="fab fa-instagram w3-hover-opacity"></i></a>
+    <a href='https://twitter.com/ttragram'><i class="fab fa-twitter-square w3-hover-opacity"></i></a>
+    <a href='https://www.linkedin.com/company/tetragram/'><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+    <br>
+  <p class="w3-small">    &copy; 2017 Interactive Merchant Services. All rights reserved. </p>
+  </div>
+</footer>
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
